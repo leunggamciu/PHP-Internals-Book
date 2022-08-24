@@ -106,7 +106,7 @@ Let's play with a simple ``fahrenheit_to_celsius()`` function (which name tells 
 Defining a function is done by using the ``PHP_FUNCTION()`` macro. That latter will take its argument and expand to the
 right structure.
 Then, we gather that function symbol and add it to the ``pib_functions`` vector. This is on type
-``zend_function_entry *``, the type extected by our ``zend_module_entry`` symbol. Into this vector, we add our PHP
+``zend_function_entry *``, the type expected by our ``zend_module_entry`` symbol. Into this vector, we add our PHP
 functions using the ``PHP_FE`` macro. That latter needs the PHP function name, and an argument vector which we passed
 NULL for the moment.
 
