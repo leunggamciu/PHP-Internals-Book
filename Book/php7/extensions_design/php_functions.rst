@@ -33,8 +33,8 @@ You can spot that this structure is not complex. This is all you'll need to decl
 Let's detail it together:
 
 A function's got a name: ``fname``. Nothing to add, you see what it's used for right? Just notice the ``const char *``
-type. That can't fit into the engine. This ``fname`` is a model and the engine will create from it an
-:doc:`interned zend_string<../internal_types/strings/zend_strings>`.
+type. That can't fit into the engine. This ``fname`` is a model and the engine will create an
+:doc:`interned zend_string<../internal_types/strings/zend_strings>` from it.
 
 Then comes the ``handler``. This is a function pointer to the C code that will be the body of that function. Here,
 we'll use macros to ease its declaration (we'll see that in a minute). Into this function, we'll be able to parse the
